@@ -1,0 +1,64 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    
+    <!--Elements-->
+    <xs:element name="name">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:maxLength value="20"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    
+    
+    <xs:element name="cantitate">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="unitate_de_masura" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:element name="lot" />
+    <xs:element name="data_expirare" />
+    
+    <!--Attributes-->
+    <xs:attribute name="name" type="xs:string"/>
+    
+    <xs:element name="produs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"  maxOccurs="1"/>
+                <xs:element ref="cantitate" maxOccurs="1" />
+                <xs:element ref="lot" maxOccurs="1"/>
+                <xs:element ref="data_expirare" maxOccurs="1"/>
+            </xs:sequence>    
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="furnizor">
+        <xs:complexType>       
+            <xs:sequence>
+                <xs:element ref="produs" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="name" use="required"/>  
+        </xs:complexType>  
+            
+    </xs:element>
+    
+    
+    <xs:element name="comenzi">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="furnizor" maxOccurs="unbounded"/>
+             </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+ 
+    
+    
+    
+</xs:schema> 

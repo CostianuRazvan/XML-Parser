@@ -1,0 +1,29 @@
+<!ELEMENT comenzi (furnizor)+>
+<!ATTLIST comenzi
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT furnizor (produs)+>
+<!ATTLIST furnizor
+  xmlns CDATA #FIXED ''
+  name CDATA #REQUIRED>
+
+<!ELEMENT produs (name,cantitate,lot,data_expirare)>
+<!ATTLIST produs
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT cantitate (#PCDATA)>
+<!ATTLIST cantitate
+  xmlns CDATA #FIXED ''
+  unitate_de_masura NMTOKEN #REQUIRED>
+
+<!ELEMENT lot (#PCDATA)>
+<!ATTLIST lot
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT data_expirare (#PCDATA)>
+<!ATTLIST data_expirare
+  xmlns CDATA #FIXED ''>

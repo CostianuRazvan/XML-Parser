@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE note SYSTEM "furnizori.dtd">
+
+
+<comenzi>
+    <furnizor name="Aldis">
+        <produs>
+            <name>Piept de pui umplut</name>
+            <cantitate unitate_de_masura="bucati">10</cantitate>
+            <lot>56</lot>
+            <data_expirare>01.06.2018</data_expirare>
+        </produs>
+        <produs>
+            <name>Jambon</name>
+            <cantitate unitate_de_masura="bucati">55</cantitate>
+            <lot>1203</lot>
+            <data_expirare>05.06.2018</data_expirare>
+        </produs>
+        <produs>
+            <name>Salam de sibiu</name>
+            <cantitate unitate_de_masura="bucati">35</cantitate>
+            <lot>98</lot>
+            <data_expirare>03.06.2018</data_expirare>
+        </produs>
+    </furnizor>
+    <furnizor name="Coca-Cola">
+         <produs>
+            <name>Coca-Cola 2l</name>
+            <cantitate unitate_de_masura="bucati">120</cantitate>
+            <lot>5784</lot>
+            <data_expirare>01.08.2019</data_expirare>
+        </produs>
+        <produs>
+            <name>Coca-Cola doze 0.33</name>
+            <cantitate unitate_de_masura="bucati">240</cantitate>
+            <lot>1367</lot>
+            <data_expirare>05.03.2019</data_expirare>
+        </produs>
+    </furnizor>
+    <furnizor name="Romaqua Group">
+        <produs>
+            <name>Borsec apa plata 2l</name>
+            <cantitate unitate_de_masura="bucati">90</cantitate>
+            <lot>678</lot>
+            <data_expirare>20.04.2019</data_expirare>
+        </produs>
+    </furnizor>
+</comenzi>
+
+
+
+
